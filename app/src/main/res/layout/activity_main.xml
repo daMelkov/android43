@@ -5,35 +5,45 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
+
     <Button
         android:id="@+id/chooseStartDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="@dimen/inner_space"
         android:gravity="start|center_vertical"
-        android:text="Дата-время старта задачи:" />
+        android:text="@string/start_date" />
+
     <Button
         android:id="@+id/chooseEndDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginTop="@dimen/inner_space"
         android:gravity="start|center_vertical"
-        android:text="Дата-время окончания задачи:" />
+        android:text="@string/end_date" />
+
     <CalendarView
         android:id="@+id/startDateCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
+        android:layout_marginTop="@dimen/inner_space"
+        android:background="@color/colorCalendarBackground" />
+
     <CalendarView
-        android:id="@+id/endtDateCalendar"
+        android:id="@+id/endDateCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#E2E2E2"/>
+        android:layout_marginTop="@dimen/inner_space"
+        android:background="@color/colorCalendarBackground" />
+
     <Button
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="OK" />
+        android:layout_marginTop="@dimen/inner_space"
+        android:layout_gravity="end"
+        android:text="@string/ok" />
+
 </LinearLayout>
